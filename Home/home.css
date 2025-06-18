@@ -1,0 +1,42 @@
+h1{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-left:85px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;                   
+    background-color: rgb(206, 15, 15);
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: 100%; 
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: auto;
+    align-items: center;
+}
+
+.Cpm{
+    color: white;
+    margin-left: 200px;
+}
+
+.LojaSao{
+ color: white;
+ margin-left: 150px;
+}
+
+.login{
+    position: absolute;
+    top: 10px;
+    width: 60px;
+    height: auto; 
+    margin-left: 1270px;
+}
