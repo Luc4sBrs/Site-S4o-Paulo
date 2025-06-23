@@ -1,42 +1,179 @@
+*{
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;  
+
+}
+
 h1{
+
     text-align: left;
     color: rgb(255, 255, 255);
     margin-left:85px;
+    font-family: "Lao Muang Don", sans-serif;
+    font-weight: 300;
+
 }
 
 .navbar {
+
     display: flex;
     align-items: center;                   
-    background-color: rgb(206, 15, 15);
+    background-color: #AF0707;
     padding: 0;
     margin: 0;
-    height: 70px;
+    height: 7vh;
     width: 100%; 
+
 }
 
 .logo {
+
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 60px;
+    top: 0.5vh;
+    left: 1vh;
+    width: 6vh;
     height: auto;
     align-items: center;
+
 }
 
 .Cpm{
+
     color: white;
-    margin-left: 200px;
+    margin-left: 400px;
+    transition: all 0.3s ease;
+    font-family: "Lao Muang Don", sans-serif;
+    font-weight: 300;
+
 }
 
 .LojaSao{
- color: white;
- margin-left: 150px;
+
+    color: white;
+    margin-left: 300px;
+    transition: all 0.3s ease;
+    font-family: "Lao Muang Don", sans-serif;
+    font-weight: 300;
+
 }
 
 .login{
+
     position: absolute;
-    top: 10px;
+    top: 5px;
     width: 60px;
     height: auto; 
-    margin-left: 1270px;
+    margin-left: 1830px;
+    transition: all 0.3s ease;
+
 }
+
+.LojaSao:hover{
+
+    transform: scale(1.1);
+
+}
+
+.login:hover{
+
+    transform: scale(1.1);
+
+}
+
+.Cpm:hover{
+
+    transform: scale(1.1);
+
+}
+
+div.container{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+div.barra1{
+
+    display: flex;
+    margin-top: 150px;
+    width: 10vh;
+    height: 50vh;
+    background-color: rgb(255, 250, 250);
+    border-radius: 5px;
+    border: solid 0.2px black;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 45px 20px 45px 15px;
+
+}
+
+.imagensBarra1{
+
+    height: 72px;
+    width: 72px;
+    transition: all 0.3s ease;
+
+}
+
+.imagensBarra1:hover{
+
+    transform: scale(1.1);
+
+}
+
+
+div.barra2{
+
+    display: flex;
+    margin-top: 150px;
+    width: 10vh;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: solid 0.2px black;
+    justify-content: space-between;
+    flex-direction: column;
+    left: 1820px;
+    padding: 45px 20px 45px 15px;
+
+}
+
+.imagensBarra2{
+
+    height: 72px;
+    width: 72px;
+    transition: all 0.3s ease;
+
+}
+
+.imagensBarra2:hover{
+
+    transform: scale(1.1);
+
+}
+
+.background{
+
+    background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/estadao/2WPVO6K3W5AYVNEO7PUJLGELFY.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+div.barra3{
+
+    display: flex;
+    background-color: #AF0707;
+    width: 1920px;
+    height: 6vh;
+    margin-top: 190px;
+    flex-direction: row-reverse;
+    padding: 0 0 50px 0;
+    
+
+}
+
