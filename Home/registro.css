@@ -10,6 +10,8 @@
 h1{
     text-align: center;
     color: rgb(255, 255, 255);
+    font-family: "Lao Muang Don", sans-serif;
+    font-weight: 300;
 }
 
 .navbar {
@@ -20,7 +22,9 @@ h1{
     padding: 0;
     margin: 0;
     height: 70px;
-    width: 100%; 
+    width: 100%;
+    font-family: "Lao Muang Don", sans-serif;
+    font-weight: 300;
   }
 
 .box{
@@ -33,23 +37,28 @@ h1{
     background: linear-gradient(180deg, #000000 0%, rgba(255, 0, 0, 0.75) 100%);
     border: 1px solid #FEFEFE;
     border-radius: 20px;
+    font-family: "Lao Muang Don", sans-serif;
+    font-weight: 300;
 }
 
 h2{
     text-align: center;
     color: #ffffff;
+    font-family: "Lao Muang Don", sans-serif;
 }
 
 .linha {
     display: flex;
     align-items: center;        
     justify-content: space-between; 
-    gap: 50px;                 
+    gap: 50px;
+    font-family: "Lao Muang Don", sans-serif;                 
   }
 
 h3{
     color: #ffffff;
     text-align: justify;
+    font-family: "Lao Muang Don", sans-serif;
 }
 
 .boxzinha{
@@ -64,6 +73,7 @@ h3{
     margin: 10px auto;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: "Lao Muang Don", sans-serif;
 }
 
 .boxzinha:hover{
@@ -87,6 +97,7 @@ body{
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
+    font-family: "Lao Muang Don", sans-serif;
 }
 
 .btn-voltar:hover{
