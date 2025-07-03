@@ -1,120 +1,31 @@
-*{
+body {
 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;  
+      background-color: #f8f9fa;
 
-}
-
-h1{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: "Lao Muang Don", sans-serif;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;                
-    justify-content: center;        
-    background-color: rgb(206, 15, 15);
-    padding: 0;
-    margin: 0;
-    height: 70px;
-    width: 100%;
-    font-family: "Lao Muang Don", sans-serif;
-  }
-
-.box{
-    box-sizing: border-box;
-    
-    width: 680px;
-    height: 490px;
-    margin: 40px auto;
-    background: linear-gradient(180deg, #000000 0%, rgba(255, 0, 0, 0.75) 100%);
-    border: 1px solid #FEFEFE;
-    border-radius: 20px;
-    font-family: "Lao Muang Don", sans-serif;
-}
-
-h2{
-    text-align: center;
-    color: #ffffff;
-    font-family: "Lao Muang Don", sans-serif;
-}
-
-.linha {
-    display: flex;
-    align-items: center;        
-    justify-content: space-between; 
-    gap: 50px;
-    font-family: "Lao Muang Don", sans-serif;               
-  }
-
-h3{
-    color: #ffffff;
-    text-align: justify;
-    font-family: "Lao Muang Don", sans-serif;
-}
-
-.boxzinha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 60px;
-    background: #D9D9D9;
-    border: 3px solid #000000;
-    border-radius: 20px;
-    margin: 10px auto;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: "Lao Muang Don", sans-serif;
-}
-
-
-
-.boxzinha:hover{
-    transform: scale(1.1);
-}
-
-button.boxzinha a{
-
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-button.boxzinha a:hover{
-
-    text-decoration: ;
-}
-
-
-body{
-    background-color: #000000; 
-}
-
-.btn-voltar {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    padding: 30px 40px;
-    background-color: #c00;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    font-family: "Lao Muang Don", sans-serif;
-}
-
-
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    height: auto;
-  }
-
- 
+    }
+    .logo {
+      width: 12vh;
+      margin-top: 3vh;
+    }
+    .form-container {
+      max-width: 45vh;
+      margin: 5vh auto;
+      background: white;
+      padding: 4vh;
+      border-radius: 1vh;
+      box-shadow: 0px 0px 1.5vh rgba(0, 0, 0, 0.1);
+    }
+    .navbar-custom {
+      background-color: #b10000;
+      padding: 2vh;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+    .btn-custom {
+      width: 100%;
+      color: black;
+    }
+    .textbo{
+        color: black
+    }
