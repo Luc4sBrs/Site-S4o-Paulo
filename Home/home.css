@@ -126,16 +126,14 @@ div.barra2{
 
 }
 
-div.barra3{
+.barra3{
 
     display: flex;
     background-color: #AF0707;
     width: 203vh   ;
     height: 6.6vh;
-    margin-top: 22vh;
-    flex-direction: row-reverse;
+    margin-top: 30vh;
     padding: 0 0 5vh 0;
-    
 
 }
 
@@ -174,3 +172,4 @@ div.barra3{
     text-decoration: none;
 
 }
+
