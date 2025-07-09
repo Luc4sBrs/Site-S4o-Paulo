@@ -29,3 +29,19 @@ body {
     .textbo{
         color: black
     }
+
+    .logoH{
+      transition: all 0.3s ease;
+    }
+  
+    .logoH:hover{
+      transform: scale(1.1);
+    }
+
+    .buttonVota{
+      transition: all 0.3s ease;
+    }
+  
+    .buttonVota:hover{
+      transform: scale(1.1);
+    }
