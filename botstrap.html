@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>São Paulo FC | Registro</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="registro.css" />
-
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .logo {
-      width: 120px;
-      margin-top: 30px;
-    }
-    .form-container {
-      max-width: 450px;
-      margin: 50px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .navbar-custom {
-      background-color: #b10000;
-      padding: 20px;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-    }
-    .btn-custom {
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - São Paulo FC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="noticias.css">
 </head>
 
 <body>
 
-  <div class="navbar-custom">
-    <h1 class="h4 mb-0">SEJA PARTE DA FAMÍLIA TRICOLOR</h1>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <a href="Home Inicio.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Brasao_do_Sao_Paulo_Futebol_Clube.svg/2054px-Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" alt="Logo" class="imagens"></a>
+            <h1 class="navbar-link1">SÃO PAULO FC</h1>
+        <div class="navbar-nav ms-auto">
+            <a class="navbar-link1">NOTÍCIAS</a>
+        </div>
 
-  <div class="form-container">
-    <h2 class="text-center mb-4">REGISTRAR-SE</h2>
+         <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar notícias..." aria-label="Buscar">
+            <button class="btn btn-light" type="submit">Buscar</button>
+        </form>
+        </div>
+    </nav>
 
-    <form action="#">
 
-      <div class="mb-4">
-        <label for="name" class="form-label">NOME</label>
-        <input type="text" class="form-control" id="name" name="name" required />
-      </div>
+    <div class="container mt-4">
+        <div class="row">
 
-      <div class="mb-4">
-        <label for="email" class="form-label">EMAIL</label>
-        <input type="email" class="form-control" id="email" name="email" required />
-      </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://cdn.saopaulofc.net/2025/07/161024_torcida_008-392x210.jpg" class="card-img-top" alt="Notícia 1">
+                    <div class="card-body">
+                        <p class="card-text">Ingressos para São Paulo x Corinthians, pelo Brasileirão</p>
+                    </div>
+                </div>
+            </div>
 
-      <div class="mb-4">
-        <label for="senha" class="form-label">SENHA</label>
-        <input type="password" class="form-control" id="senha" name="senha" required />
-      </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://cdn.saopaulofc.net/2025/07/8757-392x210.jpg" class="card-img-top" alt="Notícia 2">
+                    <div class="card-body">
+                        <p class="card-text">Em Cotia, Sub-20 vence o Comercial pelo Paulista</p>
+                    </div>
+                </div>
+            </div>
 
-      <div class="d-grid gap-3 mt-5">
-        <a href="Home Inicio.html" class="btn btn-outline-dark btn-custom">REGISTRAR-SE</a>
-      </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://cdn.saopaulofc.net/2025/06/img_4304-392x210.jpg" class="card-img-top" alt="Notícia 3">
+                    <div class="card-body">
+                        <p class="card-text">Elenco se reapresenta, tem primeiro contato com Crespo e realiza avaliações físicas</p>
+                    </div>
+                </div>
+            </div>
 
-    </form>
-
-    <div class="text-center mt-4">
-      <a href="javascript:history.back()" class="btn btn-link">VOLTAR</a>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://cdn.saopaulofc.net/2025/07/img_5699-392x210.jpg" class="card-img-top" alt="Notícia 4">
+                    <div class="card-body">
+                        <p class="card-text">Base Feminina vence o SESI na partida de ida das quartas de final do Paulistão Sub-15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="text-center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Brasao_do_Sao_Paulo_Futebol_Clube.svg/2054px-Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" alt="Logo SPFC" class="logo" />
+    <div class="mt-5">
+    <div>
+        <a href="javascript:history.back()" class="btn btn-link" style="color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(226, 0, 0);">VOLTAR</a>
     </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
