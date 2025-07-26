@@ -1,17 +1,16 @@
-/* Corpo do site */
-.site-body {
+.corpo {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
 }
 
 .navbar {
-  background-color: #ff0000;
+  background-color: #AF0707;
   padding: 1vh 0;
   color: white;
 }
 
-.navbar-menu {
+.navbar-lista {
 
     margin-left:  2vh;
     list-style: none;
@@ -20,32 +19,89 @@
     gap: 1.5vh;
 }
 
-.navbar-menu li a {
+.navbar-lista li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-.navbar-menu li a:hover {
-  color: #ffb3b3;
+.navbar-lista li a:hover {
+  color: #000000;
 }
 
-/* Formulário de busca */
-.search-form {
+.navbar-conteudo {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.navbar-esquerda {
+
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+}
+
+.navbar-centro {
+
+  display: flex;
+  justify-content: center;
+  flex: 2;
+
+}
+
+.navbar-direita {
+
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+
+}
+
+
+.marca {
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2.4vh;
+  font-weight: bold;
+
+}
+
+.logo {
+
+  height: 5.5vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+
+}
+
+.buscar-form {
+
   display: flex;
   align-items: center;
   gap: 0.5vh;
   margin-top: 1vh;
+
 }
 
-.search-input {
+.buscar-input {
+
   padding: 0.5vh 1vh;
   border-radius: 4px;
   border: none;
+
 }
 
-.search-button {
+.buscar-button {
+
   padding: 0.6vh 1.2vh;
   background-color: white;
   color: rgb(0, 0, 0);
@@ -53,14 +109,18 @@
   border-radius: 0.4vh;
   font-weight: bold;
   cursor: pointer;
+
 }
 
-.search-button:hover {
+.buscar-button:hover {
+
   background-color: #eee;
+
 }
 
-/* Grid de cards */
+
 .card-grid {
+
   display: flex;
   flex-wrap: wrap;
   gap: 2vh;
@@ -68,10 +128,12 @@
   max-width: 120vh;
   margin: 4vh auto 2vh;
   padding: 0 2vh;
+
 }
 
-/* Cards */
+
 .card {
+
   background-color: white;
   border-radius: 1vh;
   overflow: hidden;
@@ -79,60 +141,80 @@
   width: 100%;
   max-width: 35vh;
   transition: transform 0.3s;
+
 }
 
 .card:hover {
+
   transform: translateY(-0.5vh);
+
 }
 
 .card-img {
+
   width: 100%;
   height: 18.0vh;
   object-fit: cover;
+
 }
 
 .card-body {
+
   padding: 1.5vh;
+
 }
 
 .card-title {
+
   font-size: 1.8vh;
   margin-bottom: 1vh;
-  color: #c00;
+  color: #AF0707;
+
 }
 
 .card-text {
+
   font-size: 1.4vh;
   color: #333;
+
 }
 
 /* Botão Voltar */
-.back-button-container {
+.botao-voltar-conteudo {
+
   text-align: center;
   margin: 4vh 0 2vh;
+
 }
 
-.back-button {
+.botao-voltar {
+
   padding: 1vh 2vh;
-  background-color: #c00;
+  background-color: #AF0707;
   color: white;
   text-decoration: none;
   border-radius: 0.4vh;
   font-weight: bold;
+
 }
 
-.back-button:hover {
-  background-color: #a00;
+.botao-voltar:hover {
+
+  background-color: #AF0707;
+
 }
 
-/* Rodapé */
-.footer {
+
+.rodape {
+
   background-color: #111;
   color: white;
   padding: 2vh 0;
+
 }
 
-.footer-content {
+.rodape-content {
+
   max-width: 120vh;
   margin: 0 auto;
   padding: 0 2vh;
@@ -140,85 +222,57 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
 }
 
-.social-icons {
+.social-icones {
+
   margin-top: 1vh;
+
 }
 
-.social-icons a {
+.social-icones a {
+
   color: white;
   font-size: 2vh;
   margin: 0 1vh;
   transition: color 0.3s;
+
 }
 
-.social-icons a:hover {
+.social-icones a:hover {
+
   color: #ff3c3c;
+
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-  .navbar-container {
+  .navbar-conteudo {
+
     flex-direction: column;
     align-items: flex-start;
+
   }
 
-  .navbar-menu {
+  .navbar-lista {
+
     flex-direction: column;
     gap: 1vh;
     margin-top: 1vh;
+
   }
 
   .search-form {
+
     width: 100%;
     margin-top: 1vh;
+
   }
 
   .card {
+
     max-width: 100%;
+
   }
 }
 
-/* Navbar layout com alinhamento à esquerda, centro e direita */
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* Especificando áreas */
-.navbar-left {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.navbar-center {
-  display: flex;
-  justify-content: center;
-  flex: 2;
-}
-
-.navbar-right {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-}
-
-/* Corrige espaçamento do logo */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-size: 2.4vh;
-  font-weight: bold;
-}
-
-.logo {
-  height: 5.5vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
-}
