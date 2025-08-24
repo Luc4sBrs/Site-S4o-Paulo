@@ -1,157 +1,63 @@
-.corpo {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-  }
-
-.navbar {
-    background-color: #AF0707;
-    padding: 1vh 0;
-    color: white;
-  }
-
-.navbar-conteudo {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-  }
-
-.navbar-lista li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-.navbar-lista li a:hover {
-    color: #000000;
-  }
-
-.navbar-esquerda {
-
-    display: flex;
-    align-items: center;
-    flex: 1;
-  
-  }
-
-.navbar-centro {
-
-    display: flex;
-    justify-content: center;
-    flex: 2;
-  
-  }
-
-.logo {
-
-    height: 5.5vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
-  
+/* Cabeçalho */
+.cabecalho {
+  background-color: #a00; /* vermelho tricolor */
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .navbar-conteudo {
-  
-      flex-direction: column;
-      align-items: flex-start;
-  
-    }
-  .navbar-lista {
-  
-      flex-direction: column;
-      gap: 1vh;
-      margin-top: 1vh;
-  
-    }
+/* Cartão de cada jogo */
+.cartao-jogo {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
+.cartao-jogo:hover {
+  transform: scale(1.05);
+  border-color: #a00;
+}
+
+/* Logo dos times */
+.logo-time {
+  width: 70px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Data do jogo */
+.data-jogo {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Rodapé com botão */
 .rodape {
+  text-align: center;
+  margin-top: 30px;
+}
 
-    background-color: #111;
-    color: white;
-    padding: 2vh 0;
-    margin-top: 80vh;
-  
-  }
-  
-.rodape-content {
-  
-    max-width: 120vh;
-    margin: 0 auto;
-    padding: 0 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-  }
+/* Botão voltar */
+.botao-voltar {
+  background-color: #a00;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
 
-.social-icones {
-
-    margin-top: 1vh;
-  
-  }
-  
-.social-icones a {
-  
-    color: white;
-    font-size: 2vh;
-    margin: 0 1vh;
-    transition: color 0.3s;
-  
-  }
-
-  .marca {
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 2.4vh;
-    font-weight: bold;
-  
-  }
-
-  .botao-voltar-conteudo {
-
-    text-align: center;
-    margin: 4vh 0 2vh;
-    margin-top: 10vh;
-
-  }
-  
-  .botao-voltar {
-  
-    padding: 1vh 2vh;
-    background-color: #AF0707;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4vh;
-    font-weight: bold;
-  
-  }
-  
-  .botao-voltar:hover {
-  
-    background-color: #AF0707;
-  
-  }
-
-  .caixa{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 80.5vh;
-    margin-top: 20vh;
-    height: 30vh;
-    width: 40vh;
-    background-color: #000000;
-
-
-  }
+.botao-voltar:hover {
+  background-color: #700;
+}
