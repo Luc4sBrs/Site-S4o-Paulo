@@ -127,43 +127,6 @@
       <a href="Home Inicio.html" class="botao-voltar">VOLTAR</a>
     </div>
   </main>
-
-  <script>
-    const API_KEY = "SUA_API_KEY";
-    const TEAM_ID = 225; // São Paulo FC
-    
-    async function carregarJogos() {
-        const res = await fetch(`https://v3.football.api-sports.io/fixtures?team=${TEAM_ID}&last=5`, {
-            headers: {
-                "X-RapidAPI-Key": API_KEY,
-                "X-RapidAPI-Host": "v3.football.api-sports.io"
-            }
-        });
-        const data = await res.json();
-        const jogos = data.response;
-    
-        const container = document.getElementById('noticias-container');
-        container.innerHTML = ""; // Limpa o conteúdo antigo
-    
-        jogos.forEach(jogo => {
-            const adversario = jogo.teams.home.id === TEAM_ID ? jogo.teams.away.name : jogo.teams.home.name;
-            const resultado = jogo.score.fulltime.home + " x " + jogo.score.fulltime.away;
-            const dataJogo = new Date(jogo.fixture.date).toLocaleDateString();
-    
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <div class="card-body">
-                    <h5 class="card-title">${TEAM_ID === jogo.teams.home.id ? "SPFC" : adversario} x ${adversario}</h5>
-                    <p class="card-text">Resultado: ${resultado} <br> Data: ${dataJogo}</p>
-                </div>
-            `;
-            container.appendChild(card);
-        });
-    }
-    
-    window.onload = carregarJogos;
-    </script>
     
 
   <footer class="rodape">
