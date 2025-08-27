@@ -1,0 +1,63 @@
+/* Cabeçalho */
+.cabecalho {
+    background-color: #a00; /* vermelho tricolor */
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Cartão de cada jogo */
+  .cartao-jogo {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cartao-jogo:hover {
+    transform: scale(1.05);
+    border-color: #a00;
+  }
+  
+  /* Logo dos times */
+  .logo-time {
+    width: 70px;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  /* Data do jogo */
+  .data-jogo {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Rodapé com botão */
+  .rodape {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Botão voltar */
+  .botao-voltar {
+    background-color: #a00;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #700;
+  }
