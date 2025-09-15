@@ -1,15 +1,13 @@
-/* Cabeçalho */
+
 .cabecalho {
-  background-color: #a00; /* vermelho tricolor */
+  background-color: #a00;
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
   padding: 15px;
-  border-radius: 8px;
 }
 
-/* Cartão de cada jogo */
 .cartao-jogo {
   background: #fff;
   border: 2px solid #ccc;
